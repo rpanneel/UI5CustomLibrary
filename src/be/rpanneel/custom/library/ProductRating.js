@@ -2,8 +2,8 @@ sap.ui.define([
 	"sap/ui/core/Control",
 	"sap/m/RatingIndicator",
 	"sap/m/Label",
-	"sap/m/Button",
-	"./library" // Load library.js as a dependency!
+	"sap/m/Button"
+
 ], function (Control, RatingIndicator, Label, Button) {
 	"use strict";
 	return Control.extend("be.rpanneel.custom.library.ProductRating", {
@@ -64,6 +64,17 @@ sap.ui.define([
 			this.fireEvent("change", {
 				value: this.getValue()
 			});
+		},
+		renderer : function (oRM, oControl) {
+			oRM.write("<div");
+			oRM.writeControlData(oControl);
+			oRM.addClass("myAppDemoWTProductRating");
+			oRM.writeClasses();
+			oRM.write(">");
+			oRM.renderControl(oControl.getAggregation("_rating"));
+			oRM.renderControl(oControl.getAggregation("_label"));
+			oRM.renderControl(oControl.getAggregation("_button"));
+			oRM.write("</div>");
 		}
 	});
 });

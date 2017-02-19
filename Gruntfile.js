@@ -54,10 +54,10 @@ module.exports = function(grunt) {
             upload_build: {
                 options: {
                     ui5: {
-                        package: 'ZUI5',
+                        package: 'package',
                         bspcontainer: 'ZMYCUSTLIB',
                         bspcontainer_text: 'My Custom Control Library',
-                        transportno: 'transport',
+                        transportno: 'transportno',
                         calc_appindex: true
                     },
                     resources: {
@@ -73,6 +73,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks("grunt-contrib-copy");
     grunt.loadNpmTasks("grunt-openui5");
+    grunt.loadNpmTasks('grunt-nwabap-ui5uploader');
     // Build task
     grunt.registerTask("build", ["openui5_preload", "copy"]);
     // Default task
