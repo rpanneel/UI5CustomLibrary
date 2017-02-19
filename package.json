@@ -1,0 +1,17 @@
+{
+	"name": "MyCustomControlLibrary",
+	"version": "1.0.0",
+	"description": "Custom UI5 Control Library",
+	"private": true,
+	"keywords": ["Custom", "Library", "UI5"],
+	"author": "Robin Panneels",
+	"contributors": [],
+	"dependencies": {},
+	"devDependencies": {
+		"grunt": "~0.4.5",
+		"grunt-openui5": "latest",
+		"grunt-contrib-clean": "~1.0.0",
+		"grunt-contrib-copy": "~1.0.0",
+		"grunt-nwabap-ui5uploader": "^0.1.19"
+	}
+}

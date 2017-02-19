@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<library xmlns="http://www.sap.com/sap.ui.library.xsd" >
+  <name>be.rpanneel.custom.library</name>
+  <vendor>rpanneel</vendor>
+  <copyright>${copyright}</copyright>
+  <version>${version}</version>
+  <documentation>SAPUI5 library with responsive controls.</documentation>
+  <dependencies>
+    <dependency>
+      <libraryName>sap.ui.core</libraryName>
+    </dependency>
+    <dependency>
+    	<libraryName>sap.m</libraryName>
+    </dependency>
+  </dependencies>
+  <appData>
+  </appData>
+</library>
